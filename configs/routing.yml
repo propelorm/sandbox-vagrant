@@ -1,0 +1,2 @@
+PropelSandboxBundle:
+  resource: "@PropelSandboxBundle/Resources/config/routing.yml"
