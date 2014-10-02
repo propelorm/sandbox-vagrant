@@ -18,6 +18,7 @@ apt-get install -y --force-yes php5-cli php5-fpm php5-mysql
 debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password propel'
 debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password propel'
 apt-get install -y --force-yes mysql-server
+echo "create database propelsandbox" | mysql -ppropel
 
 # install Redis
 apt-get install -y --force-yes redis-server
@@ -42,3 +43,9 @@ iptables -I OUTPUT -j REJECT -m owner --gid-owner sandbox
 # restart services
 service php5-fpm restart
 service nginx restart
+
+echo "Configured your sandbox.propelorm.org vagrant machined."
+if [ ! -d "/vagrant/vendor" ]; then
+    echo "Copying ./vendor to your machine so you have auto completion and code analysis availbe ..."
+    cp -r /var/www/propelsandbox/vendor /vagrant/vendor
+fi

@@ -13,3 +13,7 @@ parameters:
 
     locale:            en
     secret:            fasgfhjuy5645rsju64wtxjfchywatsdht53atsd
+
+    debug_toolbar:          true
+    debug_redirects:        false
+    use_assetic_controller: false

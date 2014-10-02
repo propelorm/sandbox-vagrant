@@ -22,7 +22,7 @@ ln -s /vagrant/src /var/www/propelsandbox/src
 cp /vagrant/configs/AppKernel.php propelsandbox/app/AppKernel.php
 cp /vagrant/configs/routing.yml propelsandbox/app/config/routing.yml
 cp /vagrant/configs/config.yml propelsandbox/app/config/config.yml
-cp /vagrant/configs/parameter.yml propelsandbox/app/config/parameter.yml
+cp /vagrant/configs/parameters.yml propelsandbox/app/config/parameters.yml
 cp /vagrant/configs/composer.json propelsandbox/composer.json
 
 cd propelsandbox
