@@ -21,7 +21,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/rest-bundle": "~1.3",
         "jms/serializer-bundle": "~0.13",
-        "propel/propel": "dev-master"
+        "propel/propel": "dev-master",
+        "propel/propel-bundle": "~2.0@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

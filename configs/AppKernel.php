@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new PropelSandbox\PropelSandboxBundle(),
+            new Propel\PropelBundle\PropelBundle(),
             new Snc\RedisBundle\SncRedisBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle()

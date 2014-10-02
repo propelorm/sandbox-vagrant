@@ -1,8 +1,10 @@
 #!/bin/bash
 
-
 apt-get update
-apt-get install -y htop iotop vim git curl
+apt-get install -y htop iotop vim git curl tree nodejs npm
+npm install bower -g
+npm install -g uglify-js
+npm install -g uglifycss
 
 if [ -d /vagrant/src/PropelSandbox ]; then
     /vagrant/compile_userchroot.sh
