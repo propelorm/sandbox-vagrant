@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update
-apt-get install -y htop iotop vim git curl tree nodejs npm
+apt-get install -y htop iotop vim git curl tree nodejs nodejs-legacy npm
 npm install bower -g
 npm install -g uglify-js
 npm install -g uglifycss
@@ -14,7 +14,7 @@ else
 fi
 
 # install php
-apt-get install -y --force-yes php5-cli php5-fpm php5-mysql
+apt-get install -y --force-yes php5-cli php5-fpm php5-mysql php5-xdebug
 
 # install mysql
 debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password propel'
