@@ -1,8 +1,9 @@
 #!/bin/bash
 
 apt-get update
-apt-get install -y htop iotop vim git curl tree nodejs nodejs-legacy npm strace
+apt-get install -y htop iotop vim git curl tree nodejs nodejs-legacy npm strace rubygems-integration
 npm install bower -g
+npm install -g grunt-cli
 gem install sass
 
 if [ -d /vagrant/src/PropelSandbox ]; then
